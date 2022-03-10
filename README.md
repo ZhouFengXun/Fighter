@@ -5,5 +5,5 @@
 | ---- | ---- | ---- |
 
 ### 算法实现
-|   20220310   |   二分查找   |   [fighter-wx](https://github.com/ZhouFengXun/Fighter/tree/main/fighter-wx)   |
+|   20220310   |   二分查找   |   [searchArrayIndex](https://github.com/ZhouFengXun/Fighter/tree/main/fighter-demo/src/main/java/com/fanlan/fighterdemo/algorithm)   |
 | ---- | ---- | ---- |
