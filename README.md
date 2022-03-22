@@ -1,6 +1,5 @@
 # `Fighter 博客记录`
 
-
 ### 1.java基础
 
 **1.基础部分**
@@ -9,6 +8,10 @@
 
 **2.高级部分**（更新...）
 
+[1.jdk1.8 新特性 stream](https://github.com/ZhouFengXun/Fighter/blob/main/basics/Stream.md) 
+
+[2.并发线程（3种）](https://github.com/ZhouFengXun/Fighter/commit/afdf73cb53f64bca1b5c749bae36eb953fb7ccbf)
+
 ### 2.面试题（更新...）
 
 ### 3.工具类快速查找
@@ -16,14 +19,16 @@
 [工具快速查找](https://github.com/ZhouFengXun/Fighter/tree/main/fighter-demo/src/main/java/com/fanlan/fighterdemo/utils) 
 
 ### 4.日常小练习
-|微信小程序获取手机号|[fighter-wx](https://github.com/ZhouFengXun/Fighter/tree/main/fighter-wx)   |
+|项目|地址|
 | ---- | ---- |
+|微信小程序获取手机号|[fighter-wx](https://github.com/ZhouFengXun/Fighter/tree/main/fighter-wx)   |
 | kafka快速入门 | [fighter-kafka](https://github.com/ZhouFengXun/Fighter/tree/main/fighter-kafka)  |
 | 定时任务|[fighter-springtask](https://github.com/ZhouFengXun/Fighter/tree/main/fighter-springtask)|
 |springboot整合execl|[fighter-easyexcel](https://github.com/ZhouFengXun/Fighter/tree/main/fighter-easyexcel)|
 |springboot整合redis|[fighter-redis](https://github.com/ZhouFengXun/Fighter/tree/main/fighter-redis)|
 |自动生成代码|[fighter-generator](https://github.com/ZhouFengXun/Fighter/tree/main/fighter-generator)|
-
+|部门树以及任意树结构的获取
+(springboot+swagger+mybatisplus)|[fighter-tree](https://github.com/ZhouFengXun/Fighter/blob/main/fighter-tree/src/main/resources/readme.md)|
 ### 5.设计模式（23种）
 
 创建型模式，共五种：工厂方法模式、抽象工厂模式、单例模式、建造者模式、原型模式。
