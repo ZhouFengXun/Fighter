@@ -1,4 +1,4 @@
-package com.fanlan.fighterdemo.designMethod;
+package com.fanlan.fighterdemo.design.designMethod;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

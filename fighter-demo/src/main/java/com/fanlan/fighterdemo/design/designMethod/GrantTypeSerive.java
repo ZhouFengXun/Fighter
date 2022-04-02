@@ -1,4 +1,4 @@
-package com.fanlan.fighterdemo.designMethod;
+package com.fanlan.fighterdemo.design.designMethod;
 
 import org.springframework.stereotype.Service;
 
