@@ -35,4 +35,8 @@ g ：跳转到当前文件数据的第一行
 G ：跳转到当前文件数据的最后一行
 q ：退出当前文件的浏览
 
+# 查询实时日志
+tail -f logs-2022-04-29.log | grep --color -E "17836201919|commitOrder"
 
+# 多个参数匹配
+grep --color -E "17836201919|commitOrder" logs-2022-04-29.log
