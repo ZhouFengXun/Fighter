@@ -7,10 +7,9 @@ import java.util.stream.Collectors;
 
 public class StreamTest {
     public static void main(String[] args) {
-//        show();
-//        show1();
-//        show2();
-        show3();
+        //show();
+        //show1();
+        show2();
     }
 
     public static void show(){
@@ -19,9 +18,10 @@ public class StreamTest {
             list32.add(new User(i,"张三"+i));
         }
         System.out.println("转换之前的数据:" + list32);// 转换之前的数据:[1, 2, 3]
-        List<String> collect = list32.stream().map(User::getName).collect(Collectors.toList());
+        List<String> collect = list32.stream().map(user -> user.getName()).collect(Collectors.toList());
         System.out.println("转换之后的数据:" + collect); // [1, 2, 3]
     }
+
     public static void show1(){
         ArrayList<String> stringsList = new ArrayList<>(Arrays.asList("1","2","3"));
         System.out.println(stringsList);
@@ -65,38 +65,5 @@ public class StreamTest {
         resultJson.add(hashMap);
         map.put("resultJson",resultJson);
         System.out.println(map);
-    }
-
-
-    public static void show3(){
-
-        List<CmdVo> cmdList = new ArrayList<>();
-        cmdList.add(new CmdVo("1","name","zhangsan"));
-        cmdList.add(new CmdVo("2","name","lisi"));
-        cmdList.add(new CmdVo("1","age","12"));
-        cmdList.add(new CmdVo("2","age","13"));
-
-        //记错了  stream流 不能这么写 （System.out::println）
-
-        cmdList.forEach(System.out::println);
-
-//        Map<String, Map<String, String>> map
-                //= cmdList.stream().collect(Collectors.groupingBy(CmdVo::getCmd,Collectors.toMap(CmdVo::getParam, vo -> vo.getValue().toString())));
-//                = cmdList.stream().collect(Collectors.groupingBy(CmdVo::getCmd, Collectors.toMap(o->o.getParam(),v->v.getValue())));
-//                = cmdList.stream().collect(Collectors.groupingBy(CmdVo::getCmd,Collectors.toMap(CmdVo::getParam,CmdVo::getValue)));
-        Map<String, List<CmdVo>> map = cmdList.stream().collect(Collectors.groupingBy(CmdVo::getCmd));
-
-//        System.out.println(map);
-
-        List<Param> paramList = map.keySet().stream()
-                .map(key -> {
-                    Param vo = new Param();
-                    vo.setCmd(key);
-                    vo.setParam1(map.get(key));
-                    return vo;
-                })
-                .collect(Collectors.toList());
-
-        System.out.println(paramList);
     }
 }
