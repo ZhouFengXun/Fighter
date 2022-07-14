@@ -19,7 +19,7 @@ public class ExceptionController {
         ResultVo error = new ResultVo();
         error.setCode(500);
         error.setMessage(e.getMessage());
-        error.setData("some data");
+        error.setData("some date");
         return new ResponseEntity<>(error, HttpStatus.OK);
     }
 }

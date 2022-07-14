@@ -94,7 +94,7 @@ public class ExcelServiceImpl implements ExcelService {
         writerBuilder.head(EduSubject.class);
         // 构建ExcelWriter实例
         ExcelWriter excelWriter = writerBuilder.build();
-        //List<List<String>> data = new ArrayList<>();
+        //List<List<String>> date = new ArrayList<>();
         // 构建输出的sheet
         WriteSheet writeSheet = new WriteSheet();
         writeSheet.setSheetName("target");
